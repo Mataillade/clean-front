@@ -300,7 +300,7 @@ const WorkCalendar: React.FC<WorkCalendarProps> = ({
   const dates = getDates();
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-white/[0.03]">
+    <div className="rounded-2xl border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
       {/* Header */}
       <div className="p-4 border-b border-gray-200 dark:border-gray-700">
         {/* Mobile Header */}
@@ -660,7 +660,7 @@ const WorkCalendar: React.FC<WorkCalendarProps> = ({
             </div>
 
             {/* Timeline view */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
               <div className="max-h-96 overflow-y-auto">
                 {getHours().map((hour) => {
                   const hourEntries = getEntriesForHour(hour);
